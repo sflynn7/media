@@ -446,23 +446,22 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      width: 38px;
-      height: 38px;
+      width: 48px;
+      height: 48px;
       border-radius: 50%;
       border: 1px solid var(--nav-border);
       background: var(--nav-bg);
       backdrop-filter: blur(6px);
-      color: var(--nav-color);
       transition: all 0.3s ease;
     }
+    .hero-socials a[title="Instagram"] svg { fill: url(#ig-gradient) !important; }
+    .hero-socials a[title="X"] { color: #000; }
+    .hero-socials a[title="YouTube"] { color: #FF0000; }
     .hero-socials a:hover {
-      background: var(--accent);
-      border-color: var(--accent);
-      color: #fff;
       transform: translateY(-2px);
       box-shadow: 0 8px 24px rgba(0,0,0,0.18);
     }
-    .hero-socials svg { width: 17px; height: 17px; fill: currentColor; }
+    .hero-socials svg { width: 28px; height: 28px; fill: currentColor; }
 
     @keyframes fadeUp {
       from { opacity: 0; transform: translateY(22px); }
@@ -501,7 +500,18 @@
   </nav>
   <div class="hero-socials">
     <a href="https://www.instagram.com/seanhflynn/" target="_blank" rel="noopener" title="Instagram">
-      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="ig-gradient" x1="0%" y1="100%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#FCAF45"/>
+            <stop offset="25%" stop-color="#F77737"/>
+            <stop offset="50%" stop-color="#E1306C"/>
+            <stop offset="75%" stop-color="#C13584"/>
+            <stop offset="100%" stop-color="#833AB4"/>
+          </linearGradient>
+        </defs>
+        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+      </svg>
     </a>
     <a href="https://x.com/seanhflynn" target="_blank" rel="noopener" title="X">
       <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.737-8.835L1.254 2.25H8.08l4.259 5.631 5.905-5.631zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
@@ -516,7 +526,7 @@
 <!-- ─── STATS ─── -->
 <div class="stats-strip">
   <div class="stat"><span class="stat-n">122K+</span><span class="stat-l">Total Views</span></div>
-  <div class="stat"><span class="stat-n">17</span><span class="stat-l">Videos Published</span></div>
+  <div class="stat"><span class="stat-n">24</span><span class="stat-l">Videos Published</span></div>
   <div class="stat"><span class="stat-n">3</span><span class="stat-l">Channels</span></div>
   <div class="stat"><span class="stat-n">2</span><span class="stat-l">Platforms</span></div>
 </div>
@@ -729,15 +739,15 @@
     <div class="section-head head-tomodachi">
       <span class="section-platform pl-instagram">Instagram</span>
       <h2 class="section-title">Tomodachi-USA</h2>
-      <span class="section-handle">@tomodachiusa</span>
+      <span class="section-handle">@tomodach_usa</span>
     </div>
     <div class="grid">
 
       <a class="card" href="https://www.instagram.com/p/C6cFSVMSKz4/" target="_blank" rel="noopener">
-        <div class="ig-thumb"><img src="images/cover_tomodachi_usa.png" alt="Do you know about Tomodachi-USA?" loading="lazy" /></div>
+        <div class="ig-thumb"><img src="images/cover_tomodachi_usa.png" alt="I sat down with @tastytomoko" loading="lazy" /></div>
         <div class="card-body">
           <span class="card-badge badge-ig-tomo">Tomodachi-USA</span>
-          <p class="card-title">"Do you know about Tomodachi-USA?"</p>
+          <p class="card-title">"I sat down with @tastytomoko"</p>
           <div class="card-footer">
             <span class="views"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>36.7K</span>
             <span class="cta">View →</span>
@@ -746,10 +756,10 @@
       </a>
 
       <a class="card" href="https://www.instagram.com/p/C9lcgTCPwcf/" target="_blank" rel="noopener">
-        <div class="ig-thumb"><img src="images/cover_japan_quiz.png" alt="How much do you know about Japan?" loading="lazy" /></div>
+        <div class="ig-thumb"><img src="images/cover_japan_quiz.png" alt="Do you know about @tomodach_usa?" loading="lazy" /></div>
         <div class="card-body">
           <span class="card-badge badge-ig-tomo">Tomodachi-USA</span>
-          <p class="card-title">"How much do you know about Japan?"</p>
+          <p class="card-title">"Do you know about @tomodach_usa?"</p>
           <div class="card-footer">
             <span class="views"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>2.3K</span>
             <span class="cta">View →</span>
@@ -758,12 +768,34 @@
       </a>
 
       <a class="card" href="https://www.instagram.com/p/C-bxn5Wp7PX/" target="_blank" rel="noopener">
-        <div class="ig-thumb"><img src="images/cover_japanese_students.png" alt="Meeting New Japanese Students" loading="lazy" /></div>
+        <div class="ig-thumb"><img src="images/cover_japanese_students.png" alt="How much do you know about Japan?" loading="lazy" /></div>
         <div class="card-body">
           <span class="card-badge badge-ig-tomo">Tomodachi-USA</span>
-          <p class="card-title">Meeting New Japanese Students</p>
+          <p class="card-title">"How much do you know about Japan?"</p>
           <div class="card-footer">
             <span class="views"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>1.3K</span>
+            <span class="cta">View →</span>
+          </div>
+        </div>
+      </a>
+
+      <a class="card" href="https://www.instagram.com/p/C6riZgTSrrf/" target="_blank" rel="noopener">
+        <div class="ig-thumb"><img src="images/cover_japanese_students_2.png" alt="She knew about it?!" loading="lazy" /></div>
+        <div class="card-body">
+          <span class="card-badge badge-ig-tomo">Tomodachi-USA</span>
+          <p class="card-title">"She knew about it?!"</p>
+          <div class="card-footer">
+            <span class="cta">View →</span>
+          </div>
+        </div>
+      </a>
+
+      <a class="card" href="https://www.instagram.com/p/C9x2Kc7y5Cw/" target="_blank" rel="noopener">
+        <div class="ig-thumb"><img src="images/cover_like_about_japan.png" alt="What do you like about Japan? 😍" loading="lazy" /></div>
+        <div class="card-body">
+          <span class="card-badge badge-ig-tomo">Tomodachi-USA</span>
+          <p class="card-title">"What do you like about Japan? 😍"</p>
+          <div class="card-footer">
             <span class="cta">View →</span>
           </div>
         </div>
@@ -785,9 +817,9 @@
     </div>
     <div class="grid" style="grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));">
 
-      <a class="card" href="https://www.youtube.com/watch?v=bOO7C3zQTjs" target="_blank" rel="noopener">
+      <a class="card" href="https://www.youtube.com/watch?v=S-xsTX_DE9U" target="_blank" rel="noopener">
         <div class="thumb-yt">
-          <img src="https://img.youtube.com/vi/bOO7C3zQTjs/maxresdefault.jpg" alt="Asking College Students Golf Trivia in Hawaii" loading="lazy" />
+          <img src="https://img.youtube.com/vi/S-xsTX_DE9U/maxresdefault.jpg" alt="We Tried To Develop a REAL-TIME 3D Stereo Camera" loading="lazy" />
           <div class="play-btn">
             <svg viewBox="0 0 68 48" xmlns="http://www.w3.org/2000/svg">
               <rect width="68" height="48" rx="14" fill="#ff0000" fill-opacity="0.85"/>
@@ -797,9 +829,9 @@
         </div>
         <div class="card-body">
           <span class="card-badge badge-yt">YouTube</span>
-          <p class="card-title">Asking College Students Golf Trivia in Hawaii!</p>
+          <p class="card-title">We Tried To Develop a REAL-TIME 3D Stereo Camera</p>
           <div class="card-footer">
-            <span class="views"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>374</span>
+            <span class="views"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>44</span>
             <span class="cta">Watch →</span>
           </div>
         </div>
@@ -825,6 +857,66 @@
         </div>
       </a>
 
+      <a class="card" href="https://www.youtube.com/watch?v=UQP-JU621Hg" target="_blank" rel="noopener">
+        <div class="thumb-yt">
+          <img src="https://img.youtube.com/vi/UQP-JU621Hg/maxresdefault.jpg" alt="I WENT TO A PGA TOUR EVENT!" loading="lazy" />
+          <div class="play-btn">
+            <svg viewBox="0 0 68 48" xmlns="http://www.w3.org/2000/svg">
+              <rect width="68" height="48" rx="14" fill="#ff0000" fill-opacity="0.85"/>
+              <polygon points="26,14 26,34 46,24" fill="white"/>
+            </svg>
+          </div>
+        </div>
+        <div class="card-body">
+          <span class="card-badge badge-yt">YouTube</span>
+          <p class="card-title">I WENT TO A PGA TOUR EVENT!</p>
+          <div class="card-footer">
+            <span class="views"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>107</span>
+            <span class="cta">Watch →</span>
+          </div>
+        </div>
+      </a>
+
+      <a class="card" href="https://www.youtube.com/watch?v=bOO7C3zQTjs" target="_blank" rel="noopener">
+        <div class="thumb-yt">
+          <img src="https://img.youtube.com/vi/bOO7C3zQTjs/maxresdefault.jpg" alt="Asking College Students Golf Trivia in Hawaii" loading="lazy" />
+          <div class="play-btn">
+            <svg viewBox="0 0 68 48" xmlns="http://www.w3.org/2000/svg">
+              <rect width="68" height="48" rx="14" fill="#ff0000" fill-opacity="0.85"/>
+              <polygon points="26,14 26,34 46,24" fill="white"/>
+            </svg>
+          </div>
+        </div>
+        <div class="card-body">
+          <span class="card-badge badge-yt">YouTube</span>
+          <p class="card-title">Asking College Students Golf Trivia in Hawaii!</p>
+          <div class="card-footer">
+            <span class="views"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>374</span>
+            <span class="cta">Watch →</span>
+          </div>
+        </div>
+      </a>
+
+      <a class="card" href="https://www.youtube.com/watch?v=Kpx9qXDF6TY" target="_blank" rel="noopener">
+        <div class="thumb-yt">
+          <img src="https://img.youtube.com/vi/Kpx9qXDF6TY/maxresdefault.jpg" alt="10 Things That I Can't Live Without" loading="lazy" />
+          <div class="play-btn">
+            <svg viewBox="0 0 68 48" xmlns="http://www.w3.org/2000/svg">
+              <rect width="68" height="48" rx="14" fill="#ff0000" fill-opacity="0.85"/>
+              <polygon points="26,14 26,34 46,24" fill="white"/>
+            </svg>
+          </div>
+        </div>
+        <div class="card-body">
+          <span class="card-badge badge-yt">YouTube</span>
+          <p class="card-title">10 Things That I Can't Live Without</p>
+          <div class="card-footer">
+            <span class="views"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>75</span>
+            <span class="cta">Watch →</span>
+          </div>
+        </div>
+      </a>
+
     </div>
   </div>
 </div>
@@ -834,8 +926,15 @@
   <span class="f-name">Sean Hiroki Flynn</span>
   <span>Content Creator &nbsp;·&nbsp; Honolulu, HI</span>
   <div class="f-links">
-    <a href="https://www.instagram.com/seanhflynn/" target="_blank" rel="noopener">Instagram</a>
-    <a href="https://www.youtube.com/@seanhflynn" target="_blank" rel="noopener">YouTube</a>
+    <a href="https://www.instagram.com/seanhflynn/" target="_blank" rel="noopener" aria-label="Instagram">
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+    </a>
+    <a href="https://x.com/seanhflynn" target="_blank" rel="noopener" aria-label="X (Twitter)">
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.742l7.73-8.835L1.254 2.25H8.08l4.253 5.622 5.911-5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+    </a>
+    <a href="https://www.youtube.com/@seanhflynn" target="_blank" rel="noopener" aria-label="YouTube">
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="currentColor" stroke="none"/></svg>
+    </a>
   </div>
 </footer>
 
